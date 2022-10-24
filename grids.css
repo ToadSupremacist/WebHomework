@@ -4,19 +4,28 @@ body {
 }
 
 h1 {
-    font-family: monospace;
+    font-family: 'monospace, Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     font-size: 36px;
+}
+
+.wrapper {
+    position: absolute;
+    overflow: hidden;
+    left: 100px;
+    height: 600px;
+    width: 1200px;
+    outline: 3px rgb(255, 255, 255) solid;
 }
 
 #main__div {
     background-color: rgb(220, 187, 208);
     display: grid;
     position: absolute;
-    cursor: move;
     overflow: hidden;
     resize: both;
     margin: 5px;
+    left: auto;
     min-width: 500px;
     min-height: 500px; 
     grid-template-columns: repeat(8, 1fr);
@@ -25,6 +34,17 @@ h1 {
     outline-style: solid;
     outline-width: 3px;
     outline-color: rgb(241, 95, 166);
+    border-radius: 5px;
+}
+
+.div {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    overflow: hidden;
+    resize: both;
+    outline-style: solid;
+    outline-width: 3px;
     border-radius: 5px;
 }
 
@@ -61,13 +81,4 @@ h1 {
     grid-column: 1/4;
     grid-row: 1/4;
     outline-color: rgb(140, 57, 185);
-}
-
-.div {
-    display: grid;
-    overflow: hidden;
-    resize: both;
-    outline-style: solid;
-    outline-width: 3px;
-    border-radius: 5px;
 }
