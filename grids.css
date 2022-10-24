@@ -1,21 +1,26 @@
 body {
+    display: grid;
     background-color: rgb(174, 174, 174);
-    height: 600px;  
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 h1 {
-    padding-left: 80px;
     font-family: 'monospace, Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     font-size: 36px;
+    grid-column: 1/4;
+    grid-row: 1/1;
 }
 
 .wrapper {
-    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    position: relative; 
     overflow: hidden;
-    left: 100px;
     height: 600px;
-    width: 1200px;
+    width: 600px;
     outline: 3px rgb(255, 255, 255) solid;
 }
 
