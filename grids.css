@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(174, 174, 174);
+    background-color: rgb(195, 207, 212);
+    margin: 0;
 }
 
 .main {
@@ -12,10 +13,15 @@ body {
     grid-template-rows: repeat(5, 1fr);
 }
 
-h1 {
+.header {
+    background-color: rgb(160, 172, 185);
+}
+
+.h1 {
     font-family: 'monospace, Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     font-size: 36px;
+    margin-top: 0;
 }
 
 .wrapper {
@@ -95,5 +101,8 @@ h1 {
 .article {
     grid-column: 6/9;
     grid-row: 1/6;
-    outline: 3px dotted white;
+    background-color: rgba(126, 126, 126, 0.4);
+    border-radius: 8px;
+    outline: 3px #888888 solid;
+    overflow-y: scroll;
 }
