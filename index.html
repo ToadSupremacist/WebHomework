@@ -13,7 +13,7 @@
         </header>
         <main class="main">
             <div class="wrapper">
-                <div id="main__div">
+                <div id="main__div" class="div">
                     <div class="div div1">
                         <div class="div div2">
                             <div class="div div3">
@@ -25,19 +25,21 @@
             </div>
             <article class="article">
                 <p>Грид представляет собой пересекающийся набор горизонтальных и вертикальных линий, образующих колонки и строки. 
-                    Элементы могут быть помещены в грид в пределах линий этих колонок и строк.</p>
-                <span>Родительский элемент грида содержит такие правила:</span>
-                <textarea class="textarea">
-display: grid; 
+                    Элементы могут быть помещены в грид в пределах линий этих колонок и строк. 
+                    </p>
+                    <span>Вы можете жестко закодить размеры строк и столбцов или — <em>что гораздо удобнее</em> — <b>создать грид с гибкими размерами, используя проценты или единицу измерения «fr»:</b></span>
+                    <textarea class="textarea">grid-template-columns: 200px 200px 200px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 500px 1fr 2fr;
+                    </textarea>
+                <span>Родительский грид в нашем случае содержит такие правила:</span>
+                <textarea class="textarea">display: grid; 
 grid-template-columns: repeat(9, 1fr);
-grid-template-rows: repeat(5, 1fr);
-                </textarea>
-                <span>А вложеному элементу мы указываем:</span>
-                <textarea class="textarea">
-grid-column: 1/5; 
-grid-row: 1/6;
-                </textarea>
-                <p>Вы также можете создать грид с гибкими размерами, используя проценты или новую единицу измерения — «fr», разработанную для этой цели.</p>
+grid-template-rows: repeat(5, 1fr);</textarea>
+                <span>А элементу грида мы указываем его положение на сетке:</span>
+                <textarea class="textarea">grid-column: 1/5; 
+grid-row: 1/6;</textarea>
+                <p></p>
             </article>
         </main>
     </body>
