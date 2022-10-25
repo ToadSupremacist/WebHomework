@@ -54,7 +54,6 @@ body {
     outline-color: rgb(241, 95, 166);
     border-radius: 5px;
 }
-
 .div {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -65,7 +64,6 @@ body {
     outline-width: 3px;
     border-radius: 5px;
 }
-
 .div1 {
     z-index: 1;
     opacity: 0.9;
@@ -74,7 +72,6 @@ body {
     grid-row: 1/7;
     outline-color: rgb(255, 182, 98);
 }
-
 .div2 {
     z-index: 2;
     opacity: 0.8;
@@ -91,7 +88,6 @@ body {
     grid-row: 1/5;
     outline-color: rgb(87, 139, 241);
 }
-
 .div4 {
     z-index: 4;
     opacity: 0.6;
@@ -109,13 +105,18 @@ body {
     outline: 3px #888888 solid;
     overflow-y: scroll;
     padding: 10px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .textarea {
+    display: block;
     background-color: rgb(26, 26, 26);
-    width: 80%;
+    min-width: 80%;
     min-height: 100px;
+    margin: 5px;
     padding: 5px;
     resize: none;
     color: white;
+    font-family: 'Play';
 }

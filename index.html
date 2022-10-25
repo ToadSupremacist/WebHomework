@@ -5,6 +5,7 @@
         <title>ГРИДЫ и прочие шалости</title>
         <link rel="stylesheet" href="grids.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
     </head>
     <body>
         <header class="header">
@@ -23,7 +24,19 @@
                 </div>
             </div>
             <article class="article">
-                <textarea class="textarea">Введите текст...</textarea>
+                <p>Грид представляет собой пересекающийся набор горизонтальных и вертикальных линий, образующих колонки и строки. 
+                    Элементы могут быть помещены в грид в пределах линий этих колонок и строк.</p>
+                <span>Родительский элемент грида содержит такие правила:</span>
+                <textarea class="textarea">
+display: grid; grid-template-columns: 
+repeat(9, 1fr);
+grid-template-rows: repeat(5, 1fr);
+                </textarea>
+                <span>А вложеному элементу мы указываем:</span>
+                <textarea class="textarea">
+grid-column: 1/5; 
+grid-row: 1/6;
+                </textarea>
             </article>
         </main>
     </body>

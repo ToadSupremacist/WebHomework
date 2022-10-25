@@ -1,5 +1,8 @@
+// let divs = document.getElementsByClassName("div")
 
-
+// addEventListener(divs, onmouseover, true) {
+  
+// }
 
 
 //dragElement(document.getElementById("main__div"))
