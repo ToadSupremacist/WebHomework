@@ -105,6 +105,7 @@ body {
 .textarea {
     display: block;
     background-color: rgb(26, 26, 26);
+    overflow-x: visible;
     min-width: 80%;
     min-height: 100px;
     margin: 5px;
