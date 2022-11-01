@@ -32,11 +32,54 @@ body {
     margin-left: 10px;
     position: relative;
     overflow: hidden;
+    z-index: 0;
     grid-column: 1/5;
     grid-row: 1/6;
     outline: 5px rgb(255, 255, 255) solid;
     margin-bottom: 20px;
 }
+
+.gridlines1 {
+    grid-column: 1/7;
+    grid-row: 1/7;
+    outline: 3px white solid;
+}
+.gridlines2 {
+    grid-column: 3/9;
+    grid-row: 1/7;
+    outline: 3px white solid;
+}
+.gridlines3 {
+    grid-column: 1/7;
+    grid-row: 3/9;
+    outline: 3px white solid;
+}
+.gridlines4 {
+    grid-column: 3/9;
+    grid-row: 3/9;
+    outline: 3px white solid;
+}
+.gridlines5 {
+    grid-column: 1/5;
+    grid-row: 1/5;
+    outline: 3px white solid;
+}
+.gridlines6 {
+    grid-column: 5/9;
+    grid-row: 1/5;
+    outline: 3px white solid;
+}
+.gridlines7 {
+    grid-column: 1/5;
+    grid-row: 5/9;
+    outline: 3px white solid;
+}
+.gridlines8 {
+    grid-column: 5/9;
+    grid-row: 5/9;
+    outline: 3px white solid;
+}
+
 
 .div {
     display: grid;
@@ -50,39 +93,40 @@ body {
 }
 
 .main__div {
-    background-color: rgb(225, 120, 187);
+    background-color: rgba(225, 120, 187, 0.5);
     outline-color: rgb(195, 45, 117);
     position: relative;
     grid-column: 1/7;
     grid-row: 1/7;
     margin: 5px;
     gap: 5px;
+    z-index: 0;
 }
 
 .div1 {
     z-index: 1;
-    background-color: rgba(242, 175, 102, 0.9);
+    background-color: rgba(242, 175, 102, 0.5);
     grid-column: 1/7;
     grid-row: 1/7;
     outline-color: rgb(203, 118, 20);
 }
 .div2 {
     z-index: 2;
-    background-color: rgba(196, 253, 90, 0.8);
+    background-color: rgba(196, 253, 90, 0.5);
     grid-column: 1/7;
     grid-row: 1/7;
     outline-color: rgb(57, 189, 27);
 }
 .div3 {
     z-index: 3;
-    background-color: rgba(104, 173, 252, 0.7);
+    background-color: rgba(104, 173, 252, 0.5);
     grid-column: 1/7;
     grid-row: 1/7;
     outline-color: rgb(22, 82, 202);
 }
 .div4 {
     z-index: 4;
-    background-color: rgba(113, 55, 247, 0.6);
+    background-color: rgba(113, 55, 247, 0.5);
     grid-column: 1/7;
     grid-row: 1/7;
     outline-color: rgb(63, 17, 149);
@@ -110,12 +154,12 @@ body {
 }
 
 .textarea {
+    display: block;
     background-color: rgb(26, 26, 26);
-    min-width: 80%;
+    min-width: 90%;
     min-height: 100px;
     margin: 5px;
     padding: 5px;
-    resize: none;
     color: white;
     font-family: 'Play';
     font-size: 18px;

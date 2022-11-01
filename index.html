@@ -22,6 +22,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="gridlines1"></div>
+                <div class="gridlines2"></div>
+                <div class="gridlines3"></div>
+                <div class="gridlines4"></div>
+                <div class="gridlines5"></div>
+                <div class="gridlines6"></div>
+                <div class="gridlines7"></div>
+                <div class="gridlines8"></div>
             </div>
             <article class="article">
                 <p>Грид представляет собой пересекающийся набор горизонтальных и вертикальных линий, образующих колонки и строки. 
@@ -29,18 +37,25 @@
                     </p>
                     <span>Вы можете жестко закодить размеры строк и столбцов или — <em>что гораздо удобнее</em> — <b>создать грид с гибкими размерами, используя проценты или единицу измерения «fr»:</b></span>
                     <textarea class="textarea">grid-template-columns: 200px 200px 200px;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
 grid-template-columns: 500px 1fr 2fr;
-grid-template-columns: 20px repeat(6, 1fr) 20px;
-                    </textarea>
+grid-template-rows: 20px repeat(6, 1fr) 20px;</textarea>
                 <span>Родительский грид в нашем случае содержит такие правила:</span>
                 <textarea class="textarea">display: grid; 
 grid-template-columns: repeat(9, 1fr);
 grid-template-rows: repeat(5, 1fr);</textarea>
                 <span>А элементу грида мы указываем его положение на сетке:</span>
                 <textarea class="textarea">grid-column: 1/5; 
-grid-row: 1/6;</textarea>
-                <p></p>
+grid-row: 1/6;
+grid-column-start: 1;
+grid-column-end: 4;</textarea>
+                <p>Еще одно свойство гридов grid-auto-flow позволяет указать как новые элементы встанут в поток:
+<textarea class="textarea" style="overflow: hidden;">grid-auto-flow: row;
+grid-auto-flow: column;
+grid-auto-flow: dense;
+grid-auto-flow: row dense;
+grid-auto-flow: column dense;</textarea>
+                </p>
             </article>
         </main>
     </body>
